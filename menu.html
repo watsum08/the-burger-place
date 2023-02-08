@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>The Burger Place - Menu</title>
+	<meta name="description" content="Les meilleurs burgers de Lausanne">
+	<meta name="keywords" content="burger, restaurant, frites, hamburger, faim">
+  	<meta name="author" content="Marc Meynet">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="icon" href="img/favicon.ico">
+  	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body onload="scriptStart()">
+	<header>
+		<nav id="main-nav">
+				<h1 class="logo"><a href="index.html">The Burger Place</a></h1>
+				<div class="langues">
+					<div class="francais">Français</div>
+					<div class="langueAutres">
+						<a href="#" class="deutsch">Allemand</a>
+						<a href="#" class="italiano">Italien</a>
+						<a href="#" class="english">English</a>
+					</div>
+				</div>
+			<ul>
+				<li><a href="menu.html" id="page-active">Menu</a></li>
+				<li><a href="lieu.html">Lieu</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+				<button class="Pointer" type="button" onclick="alert('Ceci n\'est pas encore disponible')">Commander</button>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<h2 id="page-title">Notre menu</h2>
+			<div class="menu">
+				<section class="menu-choix" id="boeuf">
+					<img src="img/cow.png" alt="Boeuf" title="Boeuf">
+					<h3>Boeuf</h3>
+					<article>
+						<div class="nom-prix">
+							<h4>Le classique</h4>
+							<span>CHF 12.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Steak de boeuf, tranche de cheddar, laitue, tomates, sauce ketchup
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Le doublé</h4>
+							<span>CHF 15.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Double steak, tranche de cheddar, laitue, tomates, sauce ketchup
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Le fondant</h4>
+							<span>CHF 16.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Steak de boeuf, raclette valaisanne, sauce fromagère
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>King's Burger</h4>
+							<span>CHF 19.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Double steak, cheddar, mozzarelle, tranches de lard, oignons frits, sauce BBQ
+						</div>
+					</article>
+				</section>
+
+				<section class="menu-choix" id="poulet">
+					<img src="img/yellowchicken.png" alt="Poulet" title="Poulet">
+					<h3>Poulet</h3>
+					<article>
+						<div class="nom-prix">
+							<h4>Le croustillant</h4>
+							<span>CHF 12.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Filet de poulet frit, laitue, sauce à l'ail
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Le volant</h4>
+							<span>CHF 14.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Ailes de poulet sautées au paprika, poivrons, sauce BBQ
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>L'oeuf ou la poule</h4>
+							<span>CHF 16.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Filet de poulet frit, oeuf frit, oignons frits, sauce à l'ail
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Queen's Burger</h4>
+							<span>CHF 18.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Double filets de poulet frit, tranche de cheddar, sauce aux champignons
+						</div>
+					</article>
+				</section>
+
+				<section class="menu-choix" id="vegan">
+					<img src="img/vegan.png" alt="Vegan" title="Vegan">
+					<h3>Vegan</h3>
+					<article>
+						<div class="nom-prix">
+							<h4>Le sans viande</h4>
+							<span>CHF 13.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Fromage de soja, persil, sauce aux champignons
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Le naturel</h4>
+							<span>CHF 14.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Tranche de chène, bambou, sauce au gazon
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Hippy's Burger</h4>
+							<span>CHF 18.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Steak d'épinards et petits pois, fromage de soja, avocat, sauce basilic
+						</div>
+					</article>
+				</section>
+
+				<section class="menu-choix" id="supplement">
+					<img src="img/supplement.png" alt="Supplément" title="Supplément">
+					<h3>Suppléments</h3>
+					<article>
+						<div class="nom-prix">
+							<h4>Steak</h4>
+							<span>+ CHF 4.00</span>
+						</div>
+						<hr>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Fromage</h4>
+							<span>+ CHF 2.00</span>
+						</div>
+						<hr>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Bacon</h4>
+							<span>+ CHF 2.00</span>
+						</div>
+						<hr>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Pain sans gluten</h4>
+							<span>+ CHF 1.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							À base de farine de maïs
+						</div>
+					</article>
+				</section>
+
+				<section class="menu-choix" id="dessert">
+					<img src="img/dessert.png" alt="Dessert" title="Dessert">
+					<h3>Desserts</h3>
+					<article>
+						<div class="nom-prix">
+							<h4>Tiramisu</h4>
+							<span>CHF 4.00</span>
+						</div>
+						<hr>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Cheesecake</h4>
+							<span>CHF 5.00</span>
+						</div>
+						<hr>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Glace</h4>
+							<span>CHF 3.50<small>/boule</small></span>
+						</div>
+						<hr>
+						<div class="description">
+							Fraise, Vanille, Caramel, Chocolat
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Sorbet</h4>
+							<span>CHF 3.50<small>/boule</small></span>
+						</div>
+						<hr>
+						<div class="description">
+							Mangue, Ananas, Noix de coco, Framboise
+						</div>
+					</article>
+				</section>
+
+				<section class="menu-choix" id="boisson">
+					<img src="img/boisson.png" alt="Boisson" title="Boisson">
+					<h3>Boissons</h3>
+					<article>
+						<div class="nom-prix">
+							<h4>Thé froid maison <small>5dl</small></h4>
+							<span>CHF 3.50</span>
+						</div>
+						<hr>
+						<div class="description">
+							Pêche ou Citron
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Boisson gazeux <small>3dl</small></h4>
+							<span>CHF 3.00</span>
+						</div>
+						<hr>
+						<div class="description">
+							Coca-Cola, Coca-Cola Zero, Sprite, Fanta
+						</div>
+					</article>
+					<article>
+						<div class="nom-prix">
+							<h4>Eau minérale <small>3dl</small></h4>
+							<span>CHF 2.50</span>
+						</div>
+						<hr>
+						<div class="description">
+							Valser : avec ou sans gaz
+						</div>
+					</article>
+				</section>
+				<div class="menu-bottom">
+				Tous nos desserts sont faits maison ainsi que les sauces, le jour même.<br>
+				La portion de frites est incluse avec chaque burger.
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer id="pied">
+		<div class="footer-item">
+			<h2 class="footer-title">Nos horaires</h2>
+			<hr>
+			<div class="horaires">
+				<span>Lundi - Jeudi</span><span class="heures">10h - 22h</span><br>
+				<span>Vendredi - Samedi</span><span class="heures">10h - 22h</span><br>
+				<span>Fermé les dimanches</span>
+			</div>
+		</div>
+
+		<address class="footer-item">
+			<span class="footer-title">The Burger Place</span>
+			<div class="top-bot-margin-24">Av. de la Gare 42<br>
+			1003 Lausanne<br></div>
+			<a href="tel:+0241177799">024 117 77 99</a>
+		</address> 
+
+		<div class="footer-item">
+			<label class="footer-title">Suivez-nous sur les réseaux</label>
+			<hr>
+			<a class="socialmedia" id="facebook" href="#">Facebook</a>
+			<a class="socialmedia" id="twitter" href="#">Twitter</a>
+			<a class="socialmedia" id="instagram" href="#">Instagram</a>
+			<a class="socialmedia" id="linkedin" href="#">Linked In</a>
+		</div>
+
+		<span class="copyright">&copy; The Burger Place 2021, Marc Meynet</span>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

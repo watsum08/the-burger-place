@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>The Burger Place - Lieu</title>
+	<meta name="description" content="Les meilleurs burgers de Lausanne">
+	<meta name="keywords" content="burger, restaurant, frites, hamburger, faim">
+  	<meta name="author" content="Marc Meynet">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="icon" href="img/favicon.ico">
+  	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body onload="scriptStart()">
+	<header>
+		<nav id="main-nav">
+				<h1 class="logo"><a href="index.html">The Burger Place</a></h1>
+				<div class="langues">
+					<div class="francais">Français</div>
+					<div class="langueAutres">
+						<a href="#" class="deutsch">Allemand</a>
+						<a href="#" class="italiano">Italien</a>
+						<a href="#" class="english">English</a>
+					</div>
+				</div>
+			<ul>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="lieu.html" id="page-active">Lieu</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+				<button class="Pointer" type="button" onclick="alert('Ceci n\'est pas encore disponible')">Commander</button>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<h2 id="page-title">Où nous trouver</h2>
+			<div class="carte">
+				<p>Nous sommes à 5 minutes à pied de la gare de Lausanne.</p>
+				<p>En voiture, nous vous conseillons de vous garer au parking de la gare et de venir à pied.</p>
+				<iframe width="720" height="600" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Avenue%20de%20la%20Gare%2042,%201003%20Lausanne+(The%20Burger%20Place)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+			</div>
+		</div>
+	</main>
+
+	<footer id="pied">
+		<div class="footer-item">
+			<h2 class="footer-title">Nos horaires</h2>
+			<hr>
+			<div class="horaires">
+				<span>Lundi - Jeudi</span><span class="heures">10h - 22h</span><br>
+				<span>Vendredi - Samedi</span><span class="heures">10h - 22h</span><br>
+				<span>Fermé les dimanches</span>
+			</div>
+		</div>
+
+		<address class="footer-item">
+			<span class="footer-title">The Burger Place</span>
+			<div class="top-bot-margin-24">Av. de la Gare 42<br>
+			1003 Lausanne<br></div>
+			<a href="tel:+0241177799">024 117 77 99</a>
+		</address> 
+
+		<div class="footer-item">
+			<label class="footer-title">Suivez-nous sur les réseaux</label>
+			<hr>
+			<a class="socialmedia" id="facebook" href="#">Facebook</a>
+			<a class="socialmedia" id="twitter" href="#">Twitter</a>
+			<a class="socialmedia" id="instagram" href="#">Instagram</a>
+			<a class="socialmedia" id="linkedin" href="#">Linked In</a>
+		</div>
+
+		<span class="copyright">&copy; The Burger Place 2021, Marc Meynet</span>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

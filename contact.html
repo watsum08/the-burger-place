@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>The Burger Place - Lieu</title>
+	<meta name="description" content="Les meilleurs burgers de Lausanne">
+	<meta name="keywords" content="burger, restaurant, frites, hamburger, faim">
+  	<meta name="author" content="Marc Meynet">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="icon" href="img/favicon.ico">
+  	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body onload="scriptStart()">
+	<header>
+		<nav id="main-nav">
+				<h1 class="logo"><a href="index.html">The Burger Place</a></h1>
+				<div class="langues">
+					<div class="francais">Français</div>
+					<div class="langueAutres">
+						<a href="#" class="deutsch">Allemand</a>
+						<a href="#" class="italiano">Italien</a>
+						<a href="#" class="english">English</a>
+					</div>
+				</div>
+			<ul>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="lieu.html">Lieu</a></li>
+				<li><a href="contact.html" id="page-active">Contact</a></li>
+			</ul>
+				<button class="Pointer" type="button" onclick="alert('Ceci n\'est pas encore disponible')">Commander</button>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<section class="formulaire">
+				<div class="img-formulaire"></div>
+				<h3>Formulaire de contact</h3>
+				<p>Écrivez-nous directement à travers notre formulaire en ligne.</p>
+				<form action="#" method="post" id="contactform">
+					<fieldset>
+			 			<legend>Vos coordonnées</legend>
+						<label for="lastname">Nom: </label>
+						<input type="text" id="lastname" name="Nom :" required="required"><br>
+						<label for="firstname">Prénom: </label>
+						<input type="text" id="firstname" name="Prénom :" required="required"><br>
+						<label for="mail">E-mail: </label>
+						<input type="email" id="mail" name="E-mail :" required="required"><br>
+						<label for="tel">Mobile: </label>
+						<input type="tel" id="tel" name="téléphone"><br>
+						<label for="datecalendar">Date de naissance:</label>
+						<input type="date" id="datecalendar" name="Date de naissance : "><br>
+						<label for="cv">Attachement: </label>
+						<input type="file" id="cv" name="CV: "><hr>
+					</fieldset>
+					<fieldset>
+						<legend>Votre message</legend>
+						<label for="sujet">Sujet</label>
+						<input type="text" id="sujet" name="Sujet :" size="55"><br>
+						<label for="message">Message</label>
+						<textarea id="message" name="Message :" rows="8" cols="60" required="required"></textarea><br>
+						<input type="button" value="Envoyer" onclick="alert('Message envoyé !')">
+					</fieldset>
+				</form>
+				<p>Vous pouvez aussi nous appeler directement au <a href="tel:+0241177799">024 117 77 99</a></p>
+			</section>
+		</div>
+	</main>
+
+	<footer id="pied">
+		<div class="footer-item">
+			<h2 class="footer-title">Nos horaires</h2>
+			<hr>
+			<div class="horaires">
+				<span>Lundi - Jeudi</span><span class="heures">10h - 22h</span><br>
+				<span>Vendredi - Samedi</span><span class="heures">10h - 22h</span><br>
+				<span>Fermé les dimanches</span>
+			</div>
+		</div>
+
+		<address class="footer-item">
+			<span class="footer-title">The Burger Place</span>
+			<div class="top-bot-margin-24">
+				Av. de la Gare 42<br>
+				1003 Lausanne<br>
+			</div>
+			<a href="tel:+0241177799">024 117 77 99</a>
+		</address> 
+
+		<div class="footer-item">
+			<label class="footer-title">Suivez-nous sur les réseaux</label>
+			<hr>
+			<a class="socialmedia" id="facebook" href="#">Facebook</a>
+			<a class="socialmedia" id="twitter" href="#">Twitter</a>
+			<a class="socialmedia" id="instagram" href="#">Instagram</a>
+			<a class="socialmedia" id="linkedin" href="#">Linked In</a>
+		</div>
+
+		<span class="copyright">&copy; The Burger Place 2021, Marc Meynet</span>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

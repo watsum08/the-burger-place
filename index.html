@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>The Burger Place - Accueil</title>
+	<meta name="description" content="Les meilleurs burgers de Lausanne">
+	<meta name="keywords" content="burger, restaurant, frites, hamburger, faim">
+  	<meta name="author" content="Marc Meynet">
+  	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="icon" href="img/favicon.ico">
+  	<script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body onload="scriptStart()">
+	<header>
+		<nav id="main-nav">
+				<h1 class="logo"><a href="index.html" id="page-active">The Burger Place</a></h1>
+				<div class="langues">
+					<div class="francais">Français</div>
+					<div class="langueAutres">
+						<a href="#" class="deutsch">Allemand</a>
+						<a href="#" class="italiano">Italien</a>
+						<a href="#" class="english">English</a>
+					</div>
+				</div>
+			<ul>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="lieu.html">Lieu</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+				<button class="Pointer" type="button" onclick="alert('Ceci n\'est pas encore disponible')">Commander</button>
+		</nav>
+	</header>
+
+	<main>
+		<section class="cover">
+				<h2 class="introText">Dégustez le burger inégalé au goût inimitable</h2>
+		</section>
+
+		<div class="container">
+			<section class="burgerunique">
+			<h3>Burgers uniques</h3>
+				<figure>
+					<div id="quote">
+						It's the best of the best
+						<div>Gordon Ramsay</div>
+					</div>
+					<a class="lien" id="lien-menu" href="menu.html">Voir notre menu</a>
+				</figure>
+			</section>
+
+			<section class="notrehistoire">
+			<h3>Notre histoire</h3>
+				<div>
+					<p>Connu depuis 1999, réputé dans l'industrie des burgers gastronomiques pour son gôut unique et désirable, qui reste imbattable.</p>
+					<p>L'endroit où le burger est un art. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, ut recusandae fuga repellendus
+					sequi sit pariatur qui, quo amet nemo a explicabo culpa maxime facere est iusto animi quisquam nesciunt! Aliquam quis dignissim dui. 
+					Duis consectetur nisl id lobortis euismod. Nunc suscipit aliquam nibh ac elementum. Praesent consequat tortor turpis, sed semper neque 
+					viverra id. Maecenas convallis malesuada consequat. Praesent egestas feugiat tincidunt eleifend sed dapibus vel, vehicula malesuada lacus.</p>
+					<p>Venez nous trouver à Lausanne, du lundi au samedi, pour découvrir le burger de votre choix.</p>
+					<a class="lien" id="lien-horaires" href="#pied">Nos horaires</a>
+					<a class="lien" id="lien-lieu" href="lieu.html">Trouvez-nous</a>
+				</div>
+			</section>
+
+			<section class="qualitelocale">
+			<h3>Qualité locale</h3>
+				<article class="textqualite">
+				<p>Pour atteindre la meilleure qualité possible pour nos burgers, nous n'utilisons que les meilleurs ingrédients de la région.</p>
+				<p>Fusce facilisis massa ut enim hendrerit, in cursus sapien vehicula. Praesent rhoncus risus ac posuere scelerisque. Maecenas convallis malesuada consequat. Praesent egestas feugiat tincidunt. Proin maximus velit sem, vitae vehicula diam 
+					maximus id. Suspendisse congue justo id elit ultricies congue. Fusce interdum elit ut nibh porta, a tristique velit vehicula. Fusce facilisis massa ut enim hendrerit, in cursus sapien vehicula. Praesent rhoncus risus ac posuere scelerisque. Fusce interdum elit ut nibh porta, a tristique velit vehicula.</p><br>
+				<h4>Nos fournisseurs</h4>
+				<p>Grâce à nos fournisseurs, nous pouvons vous garantir un burger exceptionnel de qualité prestigieuse.</p>
+				</article>
+				<div class="fournisseurs">
+					<a href="https://www.boucherie-les-landes.ch/fr/boucherie-les-landes-accueil/" title="Boucherie Les Landes" class="fournisseur" id="boucherie">Boucherie Les Landes</a>
+					<a href="https://lausanne.magictomato.ch/fr/pains-buns/294-buns-sesame-fait-maison-pain-burger-boulangerie-bourgeois.html" title="Magic Tomato" class="fournisseur" id="pain">Magic Tomato</a>
+					<a href="https://bronnimannlegumes.ch/" title="Brönnimann Légumes" class="fournisseur" id="legumes">Brönnimann Légumes</a>
+				</div>
+				<div id="defile" class="burgerdefile"></div>
+			</section>
+		</div>
+	</main>
+
+	<footer id="pied">
+		<div class="footer-item">
+			<h2 class="footer-title">Nos horaires</h2>
+			<hr>
+			<div class="horaires">
+				<span>Lundi - Jeudi</span><span class="heures">10h - 22h</span><br>
+				<span>Vendredi - Samedi</span><span class="heures">10h - 22h</span><br>
+				<span>Fermé les dimanches</span>
+			</div>
+		</div>
+
+		<address class="footer-item">
+			<span class="footer-title">The Burger Place</span>
+			<div class="top-bot-margin-24">Av. de la Gare 42<br>
+			1003 Lausanne<br></div>
+			<a href="tel:+0241177799">024 117 77 99</a>
+		</address> 
+
+		<div class="footer-item">
+			<label class="footer-title">Suivez-nous sur les réseaux</label>
+			<hr>
+			<a class="socialmedia" id="facebook" href="#">Facebook</a>
+			<a class="socialmedia" id="twitter" href="#">Twitter</a>
+			<a class="socialmedia" id="instagram" href="#">Instagram</a>
+			<a class="socialmedia" id="linkedin" href="#">Linked In</a>
+		</div>
+
+		<span class="copyright">&copy; The Burger Place 2021, Marc Meynet</span>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
